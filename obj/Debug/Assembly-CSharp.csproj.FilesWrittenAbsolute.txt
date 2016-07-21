@@ -1,0 +1,17 @@
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/matanza/unity/Laugh/obj/Debug/Assembly-CSharp.dll
+/Users/matanza/unity/Laugh/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/matanza/unity/Laugh/Temp/bin/Debug/UnityEngine.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/UnityEditor.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Mono.Cecil.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Unity.DataContract.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/matanza/unity/Laugh/Temp/bin/Debug/Mono.Cecil.Mdb.dll
