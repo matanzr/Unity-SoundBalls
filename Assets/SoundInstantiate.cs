@@ -13,6 +13,8 @@ public class SoundInstantiate : MonoBehaviour {
 	public Vector3 attractor;
 	public float minSize;
 	public float maxSize;
+	public float lastSum = 0f, lastDelta = 0f;
+	public camMove camMove;
 
 	float MIN_CUTOFF = 0.05f;
 
@@ -53,7 +55,7 @@ public class SoundInstantiate : MonoBehaviour {
 		this.transform.Rotate( new Vector3(Mathf.Sin (Time.time)*0.1f, 0, 0));
 		float[] spectrum = soundSource.GetComponent<SoundAnalyse>().spectrum;
 		float maxSpectrum = spectrum.Length - 1;
-
+		float sum = 0;
 		if (spectrum.Length != 0) {
 			int i = 0;
 
@@ -63,9 +65,18 @@ public class SoundInstantiate : MonoBehaviour {
 				si = si < MIN_CUTOFF ? 0 : si;
 
 				float s = Mathf.Max((2-u) * minSize + spectrum [si] * maxSize, spheres [i].transform.localScale.x * 0.9f);
+				sum += spectrum [si];
 				spheres [i].transform.localScale = new Vector3 (s,s,s);
 			}
 		}
+
+		if (sum >= lastSum + lastDelta) {
+			lastDelta = sum - lastSum + 0.2f;
+			camMove.FoundBeat();
+
+		}
+		lastDelta = Mathf.Lerp(lastDelta, 0, 0.1f); 
+		lastSum = sum;
 
 	}
 }
